@@ -51,12 +51,6 @@
 //____________________________________________________________________________________________________
 
 
-const athlete1 = new Athlete('mattia', 'drago', 1980, 'atletica', [3, 5 , 7, 2, 10], 'm', true);
 
-console.log(athlete1);
-
-console.log('Età: ', athlete1.calculateAge());
-
-console.log(athlete1.toString());
 
 
