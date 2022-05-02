@@ -23,11 +23,15 @@ this.isRetired = isRetired
 
 
 
-      bestResult (){
-      
-      
-       
-      }
+      bestResult(){
+        let result = this.palmares[0]
+        for (let i = 0; i < this.palmares.length; i++) {
+
+         if (this.palmares[i] < result) {
+             result = this.palmares[i];
+         }  
+            } return result
+        }
 
 
       toString(){
@@ -41,7 +45,7 @@ this.isRetired = isRetired
                                 'Genere: ' + genere + '\n' +
                                 'Sport: ' + this.sport + '\n' +
                                 'Ritirato: ' + retired + '\n' +
-                                'Palmares: ' + this.palmares;
+                                'Palmares: ' + this.bestResult();
 
         return athleteString;
       }
